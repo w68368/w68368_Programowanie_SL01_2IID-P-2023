@@ -5,7 +5,7 @@
 <head>
  <meta charset="utf-8" />
  <title>My Website</title>
- <style>
+ <style type="text/css">
     body {
         margin: 0;
         padding: 0;
@@ -20,9 +20,30 @@
     * {
         box-sizing: border-box;
     }
+    header {
+        display: fix;
+        width: 100%;
+        background-color: lightgray;
+        top: 0;
+        left: 0;
+        position: fixed;
+        justify-content: flex-end;
+        align-items: flex-end;
+        box-shadow: 0 0 10px 2px #aaa;
+        padding: 20px 120px;
+        z-index: 100;
+
+    }
  </style>
 </head>
 
 <body>
+    <header>
+        <ul>
+            <li><a class="link" href="./piosenki.html">Ulubione piosenki</a></li>
+            <li><a class="link" href="./seriale.html">Ulubione seriale</a></li>
+        </ul>
+
+    </header>
 
 </body>
