@@ -5,61 +5,26 @@
 <head>
  <meta charset="utf-8" />
  <title>My Website</title>
- <style type="text/css">
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Inter", sans-serif;
-    }
-    h1 {
-        font-size: 50px;
-    }
-    h4 {
-        font-size: 30px;
-        color: violet;
-        justify-content: right;
-    }
-    * {
-        box-sizing: border-box;
-    }
-    header {
-        display: flex;
-        width: 100%;
-        background-color: lightgray;
-        top: 0;
-        left: 0;
-        position: fixed;
-        justify-content: flex-end;
-        align-items: flex-end;
-        box-shadow: 0 0 10px 2px #aaa;
-        padding: 20px 120px;
-        z-index: 100;
-
-    }
-    ul {
-        list-style: none outside;
-        display: flex;
-        justify-content: left;
-        align-items: flex-end;
-    }
- </style>
+ <link href="css/style.css" type="text/css" rel="stylesheet"> 
 </head>
 
 <body>
     <header>
-        <h4>Anastasiya Bialkevich</h4>
-        <ul>
+        <h4 class="header-title">Anastasiya Bialkevich</h4>
+        <ul class="header-link">
             <li><a class="link" href="./piosenki.html">Ulubione piosenki</a></li>
             <li><a class="link" href="./seriale.html">Ulubione seriale</a></li>
             <li><a class="link" href="./index.html">Strona główna</a></li>
         </ul>
         
-
     </header>
 
-    <article>
+    <main class="about-me">
+        <p> <b class="accent">Anastasiya Bialkevich</b> strona personalna</p>
+        <p class="main-text"> Cześć! Jestem Anastasiya i <i class="text-accent">lubię programować</i> </p>
+        <img class="main-img" src="laptop.jpg"/>
 
-    </article>
+    </main>
 
     <section>
 
