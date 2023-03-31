@@ -30,17 +30,15 @@ img {
 
 /* Header */
 
-.header {
+header {
   position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
-
   display: flex;
   justify-content: space-around;
   width: 100%;
   padding: 20px;
-
   background-color: lightgray;
   box-shadow: 0 0 10px 2px #aaa;
 }
