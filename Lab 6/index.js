@@ -21,6 +21,16 @@ btns.forEach(btn => {
         if(selectedBtn){
             selectedBtn.classList.remove('selected');
         }
+        
+        elementToHide.hidden = !elementToHide.hidden;
+
+        if(elementToHide.style.display == 'none'){
+            elementToHide.style.display = 'block';
+        }
+        else {
+            elementToHide.style.display = 'none';
+        }
+
 
         btn.classList.add('selected');
         selectedBtn = btn
