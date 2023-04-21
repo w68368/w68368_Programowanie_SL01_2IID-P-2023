@@ -6,3 +6,23 @@ function silnia(n){
     return 1;
 }
 console.log(silnia(5));
+
+const btns = document.querySelectorAll('button');
+
+// for (let i = 0; i < btns.lenght; i++) {
+//     const btn = btns[i];
+// }
+
+let selectedBtn;
+
+btns.forEach(btn => {
+
+    btn.addEventListener('click', () =>{
+        if(selectedBtn){
+            selectedBtn.classList.remove('selected');
+        }
+
+        btn.classList.add('selected');
+        selectedBtn = btn
+    })
+});
