@@ -3,6 +3,6 @@ const ksiazka = {
     autor: "Lew Tołstoj",
     rok: 1863,
 }
-function(ksiazka){
+function Book(ksiazka){
     return this.tutyl + "-" + this.autor + "("+ this.rok+")";
 }
