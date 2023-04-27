@@ -9,7 +9,7 @@
 let age = prompt('Give me your age')
 let message = (age < 18) ? 'You are too young' : 'You are enough old';
 alert(message);
-let temp_cel = Number(prompt('Give me temoerature in Celsjusze'))
+let temp_cel = Number(prompt('Give me temperature in Celsjusze'))
 let temp_far = temp_cel + 273.5
 console.log(temp_far)
 
