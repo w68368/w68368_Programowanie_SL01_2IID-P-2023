@@ -10,7 +10,10 @@
 //     console.log(nameField.value);
 // });
 
-const liczba1 = prompt("wpisz liczbe 1", "liczba 1");
-const liczba2 = prompt("wpisz liczbe 2", "liczba 2");
-const suma = liczba1 - liczba2;
-alert(suma);
+let liczba = prompt("wpisz liczbe", "liczba");
+if (liczba % 2 == 0) {
+    alert("liczba parzysta");
+}
+else {
+    alert("liczba nieparzysta");
+}
