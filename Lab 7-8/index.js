@@ -12,4 +12,5 @@
 
 let liczba1 = prompt("wpisz liczbe 1", "liczba 1");
 let liczba2 = prompt("wpisz liczbe 2", "liczba 2");
-document.write(liczba1 + liczba2);
+let suma = liczba1 + liczba2;
+document.write(suma);
