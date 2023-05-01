@@ -10,10 +10,21 @@
 //     console.log(nameField.value);
 // });
 
-let liczba = prompt("wpisz liczbe", "liczba");
-if (liczba % 2 == 0) {
-    alert("liczba parzysta");
+let liczba1 = prompt("podaj liczbe 1:", "liczba 1");
+let liczba2 = prompt("podaj liczbe 2:", "liczba 2");
+let operator = prompt("podaj + - * /:", "operator");
+if (operator == "+") {
+    alert(liczba1 + liczba2);
+}
+if (operator == "-") {
+    alert(liczba1 - liczba2);
+}
+if (operator == "*") {
+    alert(liczba1 * liczba2);
+}
+if (operator == "/") {
+    alert(liczba1 / liczba2);
 }
 else {
-    alert("liczba nieparzysta");
+    alert("bledny operator")
 }
