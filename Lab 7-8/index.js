@@ -12,5 +12,5 @@
 
 const liczba1 = prompt("wpisz liczbe 1", "liczba 1");
 const liczba2 = prompt("wpisz liczbe 2", "liczba 2");
-const suma = liczba1 + liczba2;
+const suma = liczba1 - liczba2;
 alert(suma);
