@@ -17,8 +17,8 @@ console.log(bookInfo);
    // Zadanie 2
 
   const student = {
-    firstName: "",
-    lastName: "",
+    firstName: "A",
+    lastName: "B",
     albumNumber: "68153",
     grades: [4, 4, 5],
   };
