@@ -26,7 +26,7 @@ console.log(bookInfo);
 //   const averageGrade =
 //     student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;
 
-const averageGrade = (student.grades[0] + student.grades[1] +student.grades[2])/student.grades.length;
+const averageGrade = (student.grades.reduce((a,b)=>a+b,0) )/student.grades.length;
   
 console.log("Student: " + student.firstName + " " + student.lastName);
 console.log("Numer albomu: " + student.albumNumber);
