@@ -3,17 +3,17 @@ function zmienTekst() {
     } 
  
 function myFunction() { 
-    alert("Hello\nHow are you?"); 
+    alert("Hello\How are you?"); 
     } 
  
 for(let i = 0; i <= 100; i += 2){ 
     console.log(i); 
 } 
  
-s1 = Number(prompt("Give me first number:", )) 
-s2 = Number(prompt("Give me second number", )) 
-wynik = s1+s2 
-console.log("Suma = " + wynik) 
+s1 = Number(prompt("Give me first number:", )); 
+s2 = Number(prompt("Give me second number", )); 
+wynik = s1+s2;
+document.write("Suma = " + wynik);
  
 //var today = new Date(); 
 //var now = today.toLocaleString(); 
