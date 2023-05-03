@@ -42,7 +42,7 @@ console.log("Srednia ocena: " + averageGrade);
     color: "silver",
     speed: 0,
     birthYear: 2021,
-  
+    
     increaseSpeed: function (value) {
       this.speed += value;
     },
@@ -56,7 +56,7 @@ console.log("Srednia ocena: " + averageGrade);
     },
   
     getInfo: function () {
-      return `${this.brand} ${this.model} (${this.year}), Color: ${this.color}, Speed: ${this.speed}`;
+      return this.brand + " " + this.model + "(" + this.year + ")" + ", " + "Kolor: " + this.color + "Predkosc: " + this.speed;
     },
     getAge: function () {
       let currentYear = new Date().getFullYear();
