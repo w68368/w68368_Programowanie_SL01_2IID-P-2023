@@ -96,9 +96,9 @@ console.log("Srednia ocena: " + averageGrade);
     },  
 };
 
-console.log(prost.getArea());
-console.log(prost.getPerimeter());
-console.log(prost.getSquare());
+document.write("Pole: " + prost.getArea());
+document.write("Obwod: " + prost.getPerimeter());
+document.wrie("Prostakat jest kwadratem: " + prost.getSquare());
 
 
 
