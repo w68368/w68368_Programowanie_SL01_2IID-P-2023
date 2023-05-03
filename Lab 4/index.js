@@ -6,19 +6,16 @@ const book = {
     year: 1997,
   };
   
-//   function getBookInfo(book) {
-//     return `${book.title} - ${book.author} (${book.year})`;
-//   }
 function getBookInfo(book) {
     return book.title + "-" + book.author + "(" + book.year + ")";
   }
   
-  // Zadanie 2
+const bookInfo = getBookInfo(book);
   
-  const bookInfo = getBookInfo(book);
+console.log(bookInfo);
   
-  console.log(bookInfo);
-  
+   // Zadanie 2
+
   const student = {
     firstName: "",
     lastName: "",
@@ -26,13 +23,15 @@ function getBookInfo(book) {
     grades: [4, 4, 5],
   };
   
-  const averageGrade =
-    student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;
+//   const averageGrade =
+//     student.grades.reduce((sum, grade) => sum + grade, 0) / student.grades.length;
+
+const averageGrade = (student.grades[0] + student.grades[1] +student.grades[2])/student.grades.length;
   
-  console.log(`Student: ${student.lastName} ${student.firstName}`);
-  console.log(`Number albumu: ${student.albumNumber}`);
-  console.log(`Oceny: ${student.grades.join(", ")}`);
-  console.log(`średnią ocena: ${averageGrade}`);
+console.log("Student: " + student.firstName + " " + student.lastName);
+console.log("Numer albomu: " + student.albumNumber);
+console.log("Oceny: " + student.grades);
+console.log("Srednia ocena: " + averageGrade);
   
   // Zadanie 3-4
   
