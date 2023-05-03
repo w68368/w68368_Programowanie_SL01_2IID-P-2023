@@ -6,9 +6,12 @@ const book = {
     year: 1997,
   };
   
-  function getBookInfo(book) {
-    return `${book.title} - ${book.author} (${book.year})`;
-  }
+//   function getBookInfo(book) {
+//     return `${book.title} - ${book.author} (${book.year})`;
+//   }
+function getBook(book) {
+    return this.title + "-" + this.author + "(" + this.year + ")";
+}
   
   // Zadanie 2
   
