@@ -75,9 +75,11 @@ console.log("Srednia ocena: " + averageGrade);
   
   // Zadanie 5
   
+  let wysota = Number(prompt("wysota prostakata: ", "0"));
+  let szer = Number(prompt("szerokosc prostakata: ", "0"));
   let prost = {
-    height: 30,
-    width: 50,
+    height: wysota,
+    width: szer,
 
     getArea: function(){
         return this.height * this.width;
