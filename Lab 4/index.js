@@ -9,9 +9,9 @@ const book = {
 //   function getBookInfo(book) {
 //     return `${book.title} - ${book.author} (${book.year})`;
 //   }
-function getBook(book) {
-    return this.title + "-" + this.author + "(" + this.year + ")";
-}
+function getBookInfo(book) {
+    return book.title + "-" + book.author + "(" + book.year + ")";
+  }
   
   // Zadanie 2
   
