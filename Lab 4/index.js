@@ -56,7 +56,7 @@ console.log("Srednia ocena: " + averageGrade);
     },
   
     getInfo: function () {
-      return this.brand + " " + this.model + "(" + this.year + ")" + ", " + "Kolor: " + this.color + "Predkosc: " + this.speed;
+      return this.brand + " " + this.model + "(" + this.year + ")" + ", " + "Kolor: " + this.color + " " + "Predkosc: " + this.speed;
     },
     getAge: function () {
       let currentYear = new Date().getFullYear();
@@ -71,27 +71,36 @@ console.log("Srednia ocena: " + averageGrade);
   console.log(car.getInfo());
   car.decreaseSpeed(40);
   console.log(car.getInfo());
-  console.log(car.getAge());
+  console.log("Age: " + car.getAge());
   
   // Zadanie 5
   
-  let rectangle = {
-    width: 5,
-    height: 7,
-  
-    getArea: function () {
-      return this.width * this.height;
+  let prost = {
+    height: 30,
+    width: 50,
+
+    getArea: function(){
+        return this.height * this.width;
     },
-  
-    getPerimeter: function () {
-      return 2 * (this.width + this.height);
+    getPerimeter: function() {
+        return (this.height * 2) + (this.width * 2);
     },
-  
-    isSquare: function () {
-      return this.width === this.height;
-    },
-  };
-  
-  console.log(rectangle.getArea());
-  console.log(rectangle.getPerimeter());
-  console.log(rectangle.isSquare());
+    getSquare: function() {
+        if (this.height == this.width) {
+            return true;
+        } else {
+            return false;
+        }
+    },  
+};
+
+console.log(prost.getArea());
+console.log(prost.getPerimeter());
+console.log(prost.getSquare());
+
+
+
+
+
+
+
