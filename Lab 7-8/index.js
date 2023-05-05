@@ -2,11 +2,27 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
+
+    if(checkNameIsValid()) {
+        alert('sukces');
+        form.reset();
+    }
 });
 
-const nameField = document.querySelector('[name="name"]');
+function requiredValidation(field) {
+    if(!field.value || field.value === '') {
+        field.setCustomValidity("Brak wartosci");
+        return false;
+    }
+    else {
+        field.setCustomValidity("");
+        return true;
+    }
+}
 
-nameField.addEventListener('input', () => {
-    console.log(nameField.value);
-});
-
+function minLengthValidation(field, ) {
+    if(!field.value || field.value === '') {
+        field.setCustomValidity("Brak wartosci");
+        return false;
+    }
+}
