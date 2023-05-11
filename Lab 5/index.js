@@ -58,6 +58,6 @@ let srednia = tablica.reduce((a,b) => (a+b)/tablica.length);
 console.log(srednia);
 let maxEl = Math.max(...tablica);
 console.log(maxEl);
-let szuk = Number(prompt("Jakiej liczby szukamy?"))
-ile = tablica.filter(i => i===szuk)
-console.log(ile)
+let szuk = Number(prompt("Jakiej liczby szukamy?"));
+ile = tablica.filter(i => i===szuk);
+console.log(ile);
