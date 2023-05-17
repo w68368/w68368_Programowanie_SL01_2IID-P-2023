@@ -44,3 +44,32 @@ function date_time()
 setInterval(function () { 
     document.getElementById('current_date_time_block2').innerHTML = date_time(); 
 }, 1000);
+
+
+
+// Zadanie 1
+function zmienTekst() {
+    alert("Witaj na mojej stronie!");
+  }
+  // aletr - это небольшое окно с сообщением.
+  
+  // Zadanie 2
+  
+  for (let i = 0; i <= 100; i += 2) {
+    console.log(i);
+  }
+  // For это цикл как в путоне.
+  // Для того чтобы перебрать все четные числа мы задаем переменную (любую) потом предел переменной (от 0 до 100) и последнее задаем значение для переменной (в данном случае к i всегда + 2)
+  
+  // Zadanie 3
+  
+  let number1 = parseInt(prompt("Podaj pierwszą liczbę całkowitą:"));
+  let number2 = parseInt(prompt("Wprowadź drugą liczbę całkowitą:"));
+  
+  let sum = number1 + number2;
+  
+  document.write("Wynik dodawania: " + sum);
+  // Мы используем функцию prompt() для отображения всплывающего окна,
+  // Мы используем функцию parseInt() для преобразования введенных значений в целые числа
+  // В переменную sum складываем эти числа
+  // document.write() мы выводим результат сложения в окно браузера.
