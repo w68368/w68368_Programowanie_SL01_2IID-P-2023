@@ -61,7 +61,9 @@ function Fibonacci(n) {
     return b;
 }
 
-for(i = 0; i < 100; i++) console.log(Fibonacci(i));
+for(i = 0; i < 100; i++) {
+    console.log(Fibonacci(i));
+}
 
 
 
