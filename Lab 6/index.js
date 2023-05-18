@@ -7,35 +7,35 @@ function silnia(n){
 }
 console.log(silnia(5));
 
-// const btns = document.querySelectorAll('button');
+const btns = document.querySelectorAll('button');
 
 // // for (let i = 0; i < btns.lenght; i++) {
 // //     const btn = btns[i];
 // // }
 
-// let selectedBtn;
+let selectedBtn;
 
-// btns.forEach(btn => {
+btns.forEach(btn => {
 
-//     btn.addEventListener('click', () =>{
-//         if(selectedBtn){
-//             selectedBtn.classList.remove('selected');
-//         }
+    btn.addEventListener('click', () =>{
+        if(selectedBtn){
+            selectedBtn.classList.remove('selected');
+        }
         
-//         elementToHide.hidden = !elementToHide.hidden;
+        elementToHide.hidden = !elementToHide.hidden;
 
-//         if(elementToHide.style.display == 'none'){
-//             elementToHide.style.display = 'block';
-//         }
-//         else {
-//             elementToHide.style.display = 'none';
-//         }
+        if(elementToHide.style.display == 'none'){
+            elementToHide.style.display = 'block';
+        }
+        else {
+            elementToHide.style.display = 'none';
+        }
 
 
-//         btn.classList.add('selected');
-//         selectedBtn = btn
-//     })
-// });
+        btn.classList.add('selected');
+        selectedBtn = btn;
+    })
+});
 
 // Zadanie 2
 
@@ -107,13 +107,13 @@ function resetButtonColors() {
 //   }
 // });
 
-const toggleButton = document.getElementById("toggleButton");
-const btns = document.querySelectorAll('button');
+// const toggleButton = document.getElementById("toggleButton");
+// const btns = document.querySelectorAll('button');
 
-toggleButton.addEventListener("click", function () {
-  if (btns.style.display === "none") {
-    btns.style.display = "block";
-  } else {
-    btns.style.display = "none";
-  }
-});
+// toggleButton.addEventListener("click", function () {
+//   if (btns.style.display === "none") {
+//     btns.style.display = "block";
+//   } else {
+//     btns.style.display = "none";
+//   }
+// });
