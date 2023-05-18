@@ -37,7 +37,7 @@ const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
 
-console.log(btn1);
+console.log(button1);
 button1.addEventListener("click", () => handleClick(button1));
 button2.addEventListener("click", () => handleClick(button2));
 button3.addEventListener("click", () => handleClick(button3));
