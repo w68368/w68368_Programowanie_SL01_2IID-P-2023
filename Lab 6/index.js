@@ -9,9 +9,9 @@ console.log(silnia(5));
 
 // const btns = document.querySelectorAll('button');
 
-// // for (let i = 0; i < btns.lenght; i++) {
-// //     const btn = btns[i];
-// // }
+// for (let i = 0; i < btns.lenght; i++) {
+//     const btn = btns[i];
+// }
 
 // let selectedBtn;
 
@@ -74,51 +74,52 @@ function resetButtonColors() {
 // Zadanie 3
 
 // Получаем ссылку на кнопку и элемент, который будем тоглить
-// const toggleButton = document.getElementById("toggleButton"); // getElementById - возвращает ссылку на элемент по его идентификатору
-// const elementToToggle = document.getElementById("elementToToggle");
+const toggleButton = document.getElementById("toggleButton"); // getElementById - возвращает ссылку на элемент по его идентификатору
+const elementToToggle = document.getElementById("elementToToggle");
 
-// // Додаємо обробник події для кнопки
-// toggleButton.addEventListener("click", function () {
-//   if (elementToToggle.style.display === "none") {
-//     elementToToggle.style.display = "block"; // Если элемент скрыт, показываем его
-//   } else {
-//     elementToToggle.style.display = "none"; // Если элемент виден, скрываем его
-//   }
-// });
+// Додаємо обробник події для кнопки
+toggleButton.addEventListener("click", function () {
+  if (elementToToggle.style.display === "none") {
+    elementToToggle.style.display = "block"; // Если элемент скрыт, показываем его
+  } else {
+    elementToToggle.style.display = "none"; // Если элемент виден, скрываем его
+  }
+});
 // Тоже добавляем событие на нажатие кнопки
 // И тут уже ставим условия if else. Если при клике елемент не виден показываем его, если виден скрываем.
 
 // Zadanie 4
 
 // Получаем ссылку на текстовое поле, кнопку и список
-// const inputField = document.getElementById("inputField"); // Всё тоже самое
-// const addButton = document.getElementById("addButton");
-// const list = document.getElementById("list");
+const inputField = document.getElementById("inputField"); // Всё тоже самое
+const addButton = document.getElementById("addButton");
+const list = document.getElementById("list");
 
-// // Добавляем обработчик события для кнопки
-// addButton.addEventListener("click", function () {
-//   const value = inputField.value; // Получаем значение с текстового поля
+// Добавляем обработчик события для кнопки
+addButton.addEventListener("click", function () {
+  const value = inputField.value; // Получаем значение с текстового поля
 
-//   if (value) {
-//     const listItem = document.createElement("li"); // createElement - создаем новый элемент списка
-//     listItem.textContent = value; // textContent - устанавливаем текст элемента списка
-//     list.appendChild(listItem); // appendChild - добавляем элемент в список
-//     inputField.value = ""; // Очищаем текстовое поле
-//   }
-// });
-
-const toggleButton = document.getElementById("toggleButton");
-const btns = document.querySelectorAll('button');
-
-toggleButton.addEventListener("click", function () {
-  if (btns.style.display === "none") {
-    btns.style.display = "block";
-  } else {
-    btns.style.display = "none";
+  if (value) {
+    const listItem = document.createElement("li"); // createElement - создаем новый элемент списка
+    listItem.textContent = value; // textContent - устанавливаем текст элемента списка
+    list.appendChild(listItem); // appendChild - добавляем элемент в список
+    inputField.value = ""; // Очищаем текстовое поле
   }
 });
 
+// const toggleButton = document.getElementById("toggleButton");
+// const btns = document.querySelectorAll('button');
 
+// toggleButton.addEventListener("click", function () {
+//   if (btns.style.display === "none") {
+//     btns.style.display = "block";
+//   } else {
+//     btns.style.display = "none";
+//   }
+// });
+
+
+// Zadanie 5
 const input = document.querySelector('input');
 const surnameInput = document.querySelector('#surname');
 const submit = document.querySelector('#submit');
