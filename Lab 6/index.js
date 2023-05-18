@@ -107,15 +107,17 @@ addButton.addEventListener("click", function () {
   }
 });
 
-const toggleButton = document.getElementById("toggleButton");
+
 const btns = document.querySelectorAll('button');
+
+let selectedBtn;
 
 btns.forEach(btn => {
   btn.addEventListener('click', () => {
-    if (btns.style.display === "none") {
-      btns.style.display = "block";
-    } else {
-      btns.style.display = "none";
-    }
-  });
+    if (selectedBtn) {
+      selectedBtn.classList.remove('selected');
+    } 
+    btn.classList.add('selected');
+    selectedBtn = btn;
+  })
 });
