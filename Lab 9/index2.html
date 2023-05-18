@@ -1,0 +1,46 @@
+<!--Zad 1-->
+<html>
+  <head>
+    <style>
+      <!-- na kolokwium może się przydać-- > #btn1.active {
+        background-color: red;
+      }
+
+      #btn2.active {
+        background-color: blue;
+      }
+
+      #btn3.active {
+        background-color: black;
+      }
+      /* При нажатии кнопки меняется цвет */
+    </style>
+  </head>
+
+  <body>
+    <button type="button" id="btn1">1</button>
+    <button type="button" id="btn2">2</button>
+    <button type="button" id="btn3">3</button>
+
+    <script>
+      let activeBtn;
+      const btn1 = document.querySelector("#btn1");
+      const btn2 = document.querySelector("#btn2");
+      const btn3 = document.querySelector("#btn3");
+
+      console.log(btn1);
+      btn1.addEventListener("click", () => handleClick(btn1));
+      btn2.addEventListener("click", () => handleClick(btn2));
+      btn3.addEventListener("click", () => handleClick(btn3));
+
+      function handleClick(btn) {
+        if (activeBtn) {
+          activeBtn.classList.remove("active");
+        }
+
+        btn.classList.add("active");
+        activeBtn = btn;
+      }
+    </script>
+  </body>
+</html>

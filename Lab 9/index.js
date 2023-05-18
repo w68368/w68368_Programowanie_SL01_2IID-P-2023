@@ -1,11 +1,3 @@
-// let car = {
-//     marka: "BMW",
-//     model: "X6",
-//     rok: 2023,
-//     kolor: "red",
-//     prędkość: 100,
-// }
-
 //Zad 1
 // Получаем ссылку на все кнопки
 const button1 = document.getElementById("button1"); // getElementById - возвращает ссылку на элемент по его идентификатору
