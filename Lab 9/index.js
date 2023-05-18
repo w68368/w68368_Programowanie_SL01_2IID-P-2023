@@ -185,3 +185,66 @@ function validForm() {
     return true;
 }
 
+//Zad 3
+
+let car = {
+    brand: "Toyota",
+    model: "Camry",
+    year: 2021,
+    color: "silver",
+    speed: 0,
+    birthYear: 2021,
+
+    increaseSpeed: function (value) {
+        this.speed += value;
+    },
+
+    decreaseSpeed: function (value) {
+        if (this.speed >= value) {
+            this.speed -= value;
+        } else {
+            this.speed = 0;
+        }
+    },
+
+    getInfo: function () {
+        return `${this.brand} ${this.model} (${this.year}), Color: ${this.color}, Speed: ${this.speed}`;
+    },
+    getAge: function () {
+        let currentYear = new Date().getFullYear();
+        return currentYear - this.birthYear;
+    },
+};
+
+console.log(car.getInfo());
+car.increaseSpeed(50);
+console.log(car.getInfo());
+car.decreaseSpeed(20);
+console.log(car.getInfo());
+car.decreaseSpeed(40);
+console.log(car.getInfo());
+console.log(car.getAge());
+
+//Zad 4
+
+const input = document.querySelector('input');
+const surnameInput = document.querySelector('#surname');
+const submit = document.querySelector('#submit');
+const ul = document.querySelector('ul');
+
+const table = document.querySelector("table");
+submit.addEventListener('click', () => {
+    const value = input.value;
+    const surname = surnameInput.value;
+    const li1 = document.createElement('li1');
+    li1.textContent = value;
+    ul.appendChild(li1);
+
+    const row = table.insertRow();
+    const newCell1 = row.insertCell();
+    newCell1.textContent = value;
+    const newCell2 = row.insertCell();
+    newCell2.textContent = surname;
+
+});
+
