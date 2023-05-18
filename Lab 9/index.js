@@ -1,35 +1,54 @@
 //Zad 1
 
 // Получаем ссылку на все кнопки
-const button1 = document.getElementById("button1"); // getElementById - возвращает ссылку на элемент по его идентификатору
-const button2 = document.getElementById("button2"); // индефекаторы мы поставили в html тегом id
-const button3 = document.getElementById("button3");
+// const button1 = document.getElementById("button1"); // getElementById - возвращает ссылку на элемент по его идентификатору
+// const button2 = document.getElementById("button2"); // индефекаторы мы поставили в html тегом id
+// const button3 = document.getElementById("button3");
 
-// Добавляем обработчик событий для каждой кнопки
-button1.addEventListener("click", function () {
-    resetButtonColors(); // Сбрасываем цвет для всех кнопок
-    button1.style.backgroundColor = "red"; // Змінюємо колір фону для натиснутої кнопки
-});
-// addEventListener - добавляет событие на кнопку (тут у нас стоит так чтобы функция срабатыв при нажатии на кнопку)
-// .style.backgroundColor - это функция меняет фактически сss (в данном случаи задний фон)
+// // Добавляем обработчик событий для каждой кнопки
+// button1.addEventListener("click", function () {
+//     resetButtonColors(); // Сбрасываем цвет для всех кнопок
+//     button1.style.backgroundColor = "red"; // Змінюємо колір фону для натиснутої кнопки
+// });
+// // addEventListener - добавляет событие на кнопку (тут у нас стоит так чтобы функция срабатыв при нажатии на кнопку)
+// // .style.backgroundColor - это функция меняет фактически сss (в данном случаи задний фон)
 
-button2.addEventListener("click", function () {
-    resetButtonColors();
-    button2.style.backgroundColor = "blue";
-});
-// Тоже самое только для другой кнопки
+// button2.addEventListener("click", function () {
+//     resetButtonColors();
+//     button2.style.backgroundColor = "blue";
+// });
+// // Тоже самое только для другой кнопки
 
-button3.addEventListener("click", function () {
-    resetButtonColors();
-    button3.style.backgroundColor = "green";
-});
+// button3.addEventListener("click", function () {
+//     resetButtonColors();
+//     button3.style.backgroundColor = "green";
+// });
 
-//Функция для сброса цвета фона для всех кнопок
+// //Функция для сброса цвета фона для всех кнопок
 
-function resetButtonColors() {
-    button1.style.backgroundColor = "";
-    button2.style.backgroundColor = "";
-    button3.style.backgroundColor = "";
+// function resetButtonColors() {
+//     button1.style.backgroundColor = "";
+//     button2.style.backgroundColor = "";
+//     button3.style.backgroundColor = "";
+// }
+
+let activeBtn;
+const button1 = document.querySelector("#button1");
+const button2 = document.querySelector("#button2");
+const button3 = document.querySelector("#button3");
+
+console.log(btn1);
+button1.addEventListener("click", () => handleClick(button1));
+button2.addEventListener("click", () => handleClick(button2));
+button3.addEventListener("click", () => handleClick(button3));
+
+function handleClick(btn) {
+    if (activeBtn) {
+        activeBtn.classList.remove("active");
+    }
+
+    btn.classList.add("active");
+    activeBtn = btn;
 }
 
 //Zad 2
