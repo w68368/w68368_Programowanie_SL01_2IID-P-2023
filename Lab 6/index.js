@@ -91,21 +91,21 @@ function resetButtonColors() {
 // Zadanie 4
 
 // Получаем ссылку на текстовое поле, кнопку и список
-const inputField = document.getElementById("inputField"); // Всё тоже самое
-const addButton = document.getElementById("addButton");
-const list = document.getElementById("list");
+// const inputField = document.getElementById("inputField"); // Всё тоже самое
+// const addButton = document.getElementById("addButton");
+// const list = document.getElementById("list");
 
-// Добавляем обработчик события для кнопки
-addButton.addEventListener("click", function () {
-  const value = inputField.value; // Получаем значение с текстового поля
+// // Добавляем обработчик события для кнопки
+// addButton.addEventListener("click", function () {
+//   const value = inputField.value; // Получаем значение с текстового поля
 
-  if (value) {
-    const listItem = document.createElement("li"); // createElement - создаем новый элемент списка
-    listItem.textContent = value; // textContent - устанавливаем текст элемента списка
-    list.appendChild(listItem); // appendChild - добавляем элемент в список
-    inputField.value = ""; // Очищаем текстовое поле
-  }
-});
+//   if (value) {
+//     const listItem = document.createElement("li"); // createElement - создаем новый элемент списка
+//     listItem.textContent = value; // textContent - устанавливаем текст элемента списка
+//     list.appendChild(listItem); // appendChild - добавляем элемент в список
+//     inputField.value = ""; // Очищаем текстовое поле
+//   }
+// });
 
 const toggleButton = document.getElementById("toggleButton");
 const btns = document.querySelectorAll('button');
