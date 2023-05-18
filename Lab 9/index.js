@@ -6,7 +6,7 @@
 //     prędkość: 100,
 // }
 
-
+//Zad 1
 // Получаем ссылку на все кнопки
 const button1 = document.getElementById("button1"); // getElementById - возвращает ссылку на элемент по его идентификатору
 const button2 = document.getElementById("button2"); // индефекаторы мы поставили в html тегом id
