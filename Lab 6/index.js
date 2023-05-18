@@ -7,35 +7,35 @@ function silnia(n){
 }
 console.log(silnia(5));
 
-const btns = document.querySelectorAll('button');
+// const btns = document.querySelectorAll('button');
 
 // // for (let i = 0; i < btns.lenght; i++) {
 // //     const btn = btns[i];
 // // }
 
-let selectedBtn;
+// let selectedBtn;
 
-btns.forEach(btn => {
+// btns.forEach(btn => {
 
-    btn.addEventListener('click', () =>{
-        if(selectedBtn){
-            selectedBtn.classList.remove('selected');
-        }
+//     btn.addEventListener('click', () =>{
+//         if(selectedBtn){
+//             selectedBtn.classList.remove('selected');
+//         }
         
-        elementToHide.hidden = !elementToHide.hidden;
+//         elementToHide.hidden = !elementToHide.hidden;
 
-        if(elementToHide.style.display == 'none'){
-            elementToHide.style.display = 'block';
-        }
-        else {
-            elementToHide.style.display = 'none';
-        }
+//         if(elementToHide.style.display == 'none'){
+//             elementToHide.style.display = 'block';
+//         }
+//         else {
+//             elementToHide.style.display = 'none';
+//         }
 
 
-        btn.classList.add('selected');
-        selectedBtn = btn;
-    })
-});
+//         btn.classList.add('selected');
+//         selectedBtn = btn;
+//     })
+// });
 
 // Zadanie 2
 
@@ -107,13 +107,35 @@ function resetButtonColors() {
 //   }
 // });
 
-// const toggleButton = document.getElementById("toggleButton");
-// const btns = document.querySelectorAll('button');
+const toggleButton = document.getElementById("toggleButton");
+const btns = document.querySelectorAll('button');
 
-// toggleButton.addEventListener("click", function () {
-//   if (btns.style.display === "none") {
-//     btns.style.display = "block";
-//   } else {
-//     btns.style.display = "none";
-//   }
-// });
+toggleButton.addEventListener("click", function () {
+  if (btns.style.display === "none") {
+    btns.style.display = "block";
+  } else {
+    btns.style.display = "none";
+  }
+});
+
+
+const input = document.querySelector('input');
+const surnameInput = document.querySelector('#surname');
+const submit = document.querySelector('#submit');
+const ul = document.querySelector('ul');
+
+const table = document.querySelector("table");
+submit.addEventListener('click', () => {
+  const value = input.value;
+  const surname = surnameInput.value;
+  const li1 = document.createElement('li1');
+  li1.textContent = value;
+  ul.appendChild(li1);
+
+  const row = table.insertRow();
+  const newCell1 = row.insertCell();
+  newCell1.textContent = value;
+  const newCell2 = row.insertCell();
+  newCell2.textContent = surname;
+
+});
