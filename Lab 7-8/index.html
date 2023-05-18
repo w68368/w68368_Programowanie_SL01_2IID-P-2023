@@ -28,55 +28,107 @@
         .actions {
             justify-content: center;
         }
+
+        .error {
+            color: #F00
+        }
+
+        .contactAddress input, .province input, .province select {
+            width: 100%;
+        }
     </style>
 
-
+<script type="text/javascript" defer src="index.js">
+</script>
 </head>
 
 <body>
-    <form class="form" name="form">
+    <form class="form" name="form" method="post" novalidate>
         <div class="control">
-            <label>Imie </label>
-            <input type="text" name="name" minlength="2" required>
+            <label>Imie</label>
+            <input type="text" name="name">
+            <span class="error"></span>
         </div>
         <div class="control">
             <label>Nazwisko </label>
-            <input type="text" name="surname" minlength="2" required>
+            <input type="text" name="surname">
+            <span class="error"></span>
         </div>
         <div class="control">
             <label>Email: </label>
-            <input type="email" name="email" required>
+            <input type="text" name="email">
+            <span class="error"></span>
         </div>
         <div class="control">
             <label>Hasło: </label>
-            <input type="password" name="password" minlength="8" required>
+            <input type="password" name="password">
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Powtórz Hasło: </label>
+            <input type="password" name="confirm-password">
+            <span class="error"></span>
         </div>
         <div class="control">
             <label>Płeć:</label>
             <div>
-                <input type="radio" id="m" name="sex" value="m" required>
+                <input type="radio" id="m" name="sex" value="m">
                 <label for="m">M</label>
-                <input type="radio" id="k" name="sex" value="k" required>
+                <input type="radio" id="k" name="sex" value="k">
                 <label for="k">K</label>
             </div>
+            <span class="sex error"></span>
         </div>
         <div class="control">
             <label>Telefon: </label>
-            <input type="tel" name="phone" minlength="9" maxlength="9" required>
+            <input type="text" name="phone">
+            <span class="error"></span>
         </div>
         <div class="control">
             <label>Data urodzenia: </label>
-            <input type="date" name="birthDate" required>
+            <input type="date" name="birthDate">
+            <span class="error"></span>
         </div>
         <div class="control">
             <label>Kraj: </label>
-            <select name="country" required>
+            <select name="country">
                 <option></option>
                 <option value="Polska">Polska</option>
                 <option value="Ukraina">Ukraina</option>
                 <option value="Litwa">Litwa</option>
                 <option value="Niemcy">Niemcy</option>
             </select>
+            <span class="error"></span>
+        </div>
+        <div class="province">
+            <label>Województwo: </label>
+            <input type="text" disabled name="province">
+            <span class="error"></span>
+        </div>
+        <div class="province select" hidden>
+            <label>Województwo: </label>
+            <select name="province" disabled>
+                <option></option>
+                <option value="Podkarpacie">Podkarpacie</option>
+                <option value="Małopolska">Małopolska</option>
+                <option value="Mazowsze">Mazowsze</option>
+                <option value="Wielkopolska">Wielkopolska</option>
+            </select>
+            <span class="error"></span>
+        </div>
+        <div class="control">
+            <label>Adres zamieszkania: </label>
+            <input type="text" disabled name="address">
+            <span class="error"></span>
+        </div>
+        <div>
+            <input type="checkbox" checked name="hasSameContactAddress">
+            <label>Adres korespodencyjny taki sam jak zamieszkania </label>
+        </div>
+        <div class="contactAddress" hidden>
+            <label>Adres korespodencyjny: </label>
+            <input type="text" disabled name="contactAddress">
+            <span class="error"></span>
         </div>
 
         <div class="control actions">
