@@ -6,22 +6,36 @@
 //     prędkość: 100,
 // }
 
-let activeBtn;
-      const btn1 = document.querySelector("#btn1");
-      const btn2 = document.querySelector("#btn2");
-      const btn3 = document.querySelector("#btn3");
 
-      console.log(btn1);
-      btn1.addEventListener("click", () => handleClick(btn1));
-      btn2.addEventListener("click", () => handleClick(btn2));
-      btn3.addEventListener("click", () => handleClick(btn3));
+// Получаем ссылку на все кнопки
+const button1 = document.getElementById("button1"); // getElementById - возвращает ссылку на элемент по его идентификатору
+const button2 = document.getElementById("button2"); // индефекаторы мы поставили в html тегом id
+const button3 = document.getElementById("button3");
 
-      function handleClick(btn) {
-        if (activeBtn) {
-          activeBtn.classList.remove("active");
-        }
+// Добавляем обработчик событий для каждой кнопки
+button1.addEventListener("click", function () {
+  resetButtonColors(); // Сбрасываем цвет для всех кнопок
+  button1.style.backgroundColor = "red"; // Змінюємо колір фону для натиснутої кнопки
+});
+// addEventListener - добавляет событие на кнопку (тут у нас стоит так чтобы функция срабатыв при нажатии на кнопку)
+// .style.backgroundColor - это функция меняет фактически сss (в данном случаи задний фон)
 
-        btn.classList.add("active");
-        activeBtn = btn;
-      }
+button2.addEventListener("click", function () {
+  resetButtonColors();
+  button2.style.backgroundColor = "blue";
+});
+// Тоже самое только для другой кнопки
+
+button3.addEventListener("click", function () {
+  resetButtonColors();
+  button3.style.backgroundColor = "green";
+});
+
+//Функция для сброса цвета фона для всех кнопок
+
+function resetButtonColors() {
+  button1.style.backgroundColor = "";
+  button2.style.backgroundColor = "";
+  button3.style.backgroundColor = "";
+}
 
