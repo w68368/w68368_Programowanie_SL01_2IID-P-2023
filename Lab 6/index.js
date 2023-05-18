@@ -74,17 +74,17 @@ function resetButtonColors() {
 // Zadanie 3
 
 // Получаем ссылку на кнопку и элемент, который будем тоглить
-const toggleButton = document.getElementById("toggleButton"); // getElementById - возвращает ссылку на элемент по его идентификатору
-const elementToToggle = document.getElementById("elementToToggle");
+// const toggleButton = document.getElementById("toggleButton"); // getElementById - возвращает ссылку на элемент по его идентификатору
+// const elementToToggle = document.getElementById("elementToToggle");
 
-// Додаємо обробник події для кнопки
-toggleButton.addEventListener("click", function () {
-  if (elementToToggle.style.display === "none") {
-    elementToToggle.style.display = "block"; // Если элемент скрыт, показываем его
-  } else {
-    elementToToggle.style.display = "none"; // Если элемент виден, скрываем его
-  }
-});
+// // Додаємо обробник події для кнопки
+// toggleButton.addEventListener("click", function () {
+//   if (elementToToggle.style.display === "none") {
+//     elementToToggle.style.display = "block"; // Если элемент скрыт, показываем его
+//   } else {
+//     elementToToggle.style.display = "none"; // Если элемент виден, скрываем его
+//   }
+// });
 // Тоже добавляем событие на нажатие кнопки
 // И тут уже ставим условия if else. Если при клике елемент не виден показываем его, если виден скрываем.
 
@@ -105,4 +105,17 @@ addButton.addEventListener("click", function () {
     list.appendChild(listItem); // appendChild - добавляем элемент в список
     inputField.value = ""; // Очищаем текстовое поле
   }
+});
+
+const toggleButton = document.getElementById("toggleButton");
+const btns = document.querySelectorAll('button');
+
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btns.style.display === "none") {
+      btns.style.display = "block";
+    } else {
+      btns.style.display = "none";
+    }
+  });
 });
