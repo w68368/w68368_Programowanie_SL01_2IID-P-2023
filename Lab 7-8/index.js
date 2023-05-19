@@ -33,6 +33,7 @@ emailField.addEventListener("input", () => {
 const passwordField = document.querySelector("[name='password']");
 passwordField.addEventListener("input", () => {
   requiredValidation(passwordField);
+  passwordValidation(passwordField);
 });
 
 const sexFields = document.getElementsByName("sex");
