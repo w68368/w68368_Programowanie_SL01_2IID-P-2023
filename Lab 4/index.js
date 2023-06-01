@@ -96,8 +96,16 @@ console.log(rectangle.getPerimeter());
 console.log(rectangle.isSquare());
 
 
-
-
+let tb = [1,2,3,4,5];
+let count = 0;
+function parz () {
+  for (const el of tb) {
+    if (el % 2 === 0) {
+      count++;
+    }
+  }
+}
+console.log(tb.parz())
 
 
 
