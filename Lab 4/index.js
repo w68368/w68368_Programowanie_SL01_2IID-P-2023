@@ -96,16 +96,21 @@ console.log(rectangle.getPerimeter());
 console.log(rectangle.isSquare());
 
 
-let tb = [1,2,3,4,5];
-let count = 0;
-function parz () {
-  for (const el of tb) {
-    if (el % 2 === 0) {
-      count++;
+function iloscParzystych(tb) {
+  let ilosc = 0;
+
+  for (let i = 0; i < tb.length; i++) {
+    if (tb[i] % 2 === 0) {
+      ilosc++;
     }
   }
+
+  return ilosc;
 }
-console.log(tb.parz())
+
+tbl = [1,2,3,4,5];
+console.log(iloscParzystych(tbl));
+
 
 
 
